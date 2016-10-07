@@ -27,7 +27,7 @@ export default function () {
 export function redirect (res, url, code = 301) {
   res.writeHead(code, {
     'Content-Type': 'text/plain',
-    'Location': url,
+    'Location': url
   })
 
   res.end(`Redirecting to ${url}`)

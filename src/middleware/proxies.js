@@ -5,7 +5,7 @@ import { convertToGlob, parseUrl } from '../utils/urlex'
 
 const proxyServer = httpProxy.createProxyServer({
   changeOrigin: true,
-  toProxy: true,
+  toProxy: true
 })
 
 export default function () {
@@ -27,7 +27,7 @@ export default function () {
 
         proxyServer.on('error', next)
         proxyServer.web(req, res, {
-          target: `${parsed.protocol}//${parsed.host}`,
+          target: `${parsed.protocol}//${parsed.host}`
         }, next)
       }
     })

@@ -14,7 +14,7 @@ const defaults = {
   redirects: [],
   proxies: [],
   routes: [],
-  headers: [],
+  headers: []
 }
 
 export default async function (userConfig = {}) {

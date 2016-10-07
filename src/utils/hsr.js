@@ -38,7 +38,7 @@ export async function startHsrWebsocket () {
   const WsServer = websocket.server
   const ws = new WsServer({
     httpServer: server,
-    autoAcceptConnections: false,
+    autoAcceptConnections: false
   })
 
   ws.on('request', (req) => {
